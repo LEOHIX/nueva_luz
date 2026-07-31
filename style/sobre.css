@@ -25,7 +25,7 @@ main{
 
 
 #boton img  {
-  width: auto;   /* ajusta el tamaño del botón */
+  width: 200px ;   /* ajusta el tamaño del botón */
   height: auto;
   display: block;
 }
