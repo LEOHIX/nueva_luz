@@ -1,0 +1,31 @@
+
+body{
+ background:  linear-gradient(135deg, #f5f1e8, #d8c3a5) ;
+ 
+ margin: 10px;  
+}
+
+main{
+ background-image: url('../img/sobre.jpg');
+  background-size:  70% auto; /* cubre arriba y abajo */
+  background-repeat: no-repeat;
+  background-position: center ; /* centrado arriba */
+  min-height: 100vh;  
+  position: relative;
+}
+
+
+
+#boton {
+  position: absolute;   /* coloca el botón encima del fondo */
+  top: 50%;             /* lo baja a la mitad */
+  left: 50%;            /* lo mueve al centro */
+  transform: translate(-50%, -50%); /* lo centra exactamente */
+}
+
+
+#boton img  {
+  width: 300px;   /* ajusta el tamaño del botón */
+  height: auto;
+  display: block;
+}

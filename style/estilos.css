@@ -1,0 +1,100 @@
+
+
+    body {
+    background: linear-gradient(135deg, #f5f1e8, #d8c3a5);
+    font-family: Arial, Helvetica, sans-serif; /* Tipo de letra */
+
+    display: flex;              /* Activa el modo flexible */
+    justify-content: center;    /* Centra horizontalmente */
+    align-items: center;        /* Centra verticalmente */
+    min-height: 100vh;          /* Ocupa toda la altura de la pantalla */
+    margin: 0;  
+    flex-direction: column;
+  
+    } 
+
+    main {
+    max-width: 500px;        /* Que no sea muy ancho en computadoras */
+    background: #fffaf2;       /* Fondo blanco */
+    padding: 30px;           /* Espacio interno para que no pegue al borde */
+    border-radius: 20px;     /* Esquinas redondeadas */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Sombrita suave */
+    text-align: center; /*centratodo lo que este adentro*/
+}
+
+#confirmacion {
+    display: flex;              /* Activa el modo flexible */
+    flex-direction: column;     /* Los pone en columna (uno debajo del otro) */
+    align-items: center;        /* Los centra horizontalmente */
+    gap: 15px;                 /* Espacio de 15px entre el botón y el enlace */
+}
+
+#calendario {
+    display: flex;              /* Activa el modo flexible */
+    flex-direction: column;     /* Los pone en columna (uno debajo del otro) */
+    align-items: center;        /* Los centra horizontalmente */
+    gap: 15px;                 /* Espacio de 15px entre el botón y el enlace */
+}
+
+img {
+    width: 100%;             /* Ocupa todo el ancho disponible */
+    border-radius: 15px;     /* Esquinas redondeadas */
+    margin-top: 15px;        /* Separación arriba */
+}
+
+button {
+    background-color: #6b1f35;; /* Rojo Spiderman */
+    color: white;              /* Letras blancas */
+    border: none;              /* Quitamos el borde feo por defecto */
+    padding: 15px 30px;        /* Tamaño del botón */
+    font-size: 18px;           /* Tamaño de letra */
+    border-radius: 30px;       /* Bordes redondos */
+    cursor: pointer;           /* Manita al pasar el mouse */
+    font-weight: bold;
+    
+}
+
+button:hover {
+    background-color: #990000; /* Rojo más oscuro */
+}
+
+/* 5. Quitar el subrayado feo del enlace de WhatsApp */
+/*a {
+    text-decoration: none;     /* Quita el subrayado */
+ /*   display: inline-block;     /* Para que se comporte como botón */
+   /* margin-top: 15px;          /* Separación */
+/*}
+
+
+
+
+/* RECETA: "Aparecer desde abajo" */
+@keyframes subirYBailar {
+    0% {
+        opacity: 0;           /* Invisible */
+        transform: translateY(50px); /* 50px abajo */
+    }
+    60% {
+        transform: translateY(-10px); /* Rebota un poco hacia arriba */
+    }
+    100% {
+        opacity: 2;           /* Totalmente visible */
+        transform: translateY(0);     /* En su lugar */
+    }
+}
+
+
+header h1 {
+    color:  #6b1f35;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    
+    /* ⬇️ NUEVO: Aplicar la animación ⬇️ */
+    animation: subirYBailar 1.2s ease-out;
+}
+
+
+.logo {
+    width: 180px;
+    margin-bottom: 15px;
+}

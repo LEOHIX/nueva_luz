@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>invitacion pera ver spiderman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/estilos.css" > 
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+</head>
+
+<body>
+
+   <header>
+   
+    <h1>En memoria de [Nombre de la persona]</h1>
+    </header>
+
+    <main>
+      
+
+    <!-- seccion de evento -->
+    <section id="evento"> 
+        <h2>Con profundo pesar, invitamos a acompañarnos en su despedida</h2>
+
+        <p>Familiares y amigos:</p>
+
+        <p>
+            Les invitamos cordialmente a acompañarnos en el servicio funerario 
+            en memoria de nuestro querido(a) <strong>[Nombre]</strong>.
+        </p>
+
+        <p>Fecha: [Día y fecha]</p>
+        <p>Hora: [Hora del servicio]</p>
+        <p>Lugar: [Nombre de la funeraria o templo]</p>
+           <img src="img/recuerdo.jpg" alt="Foto en memoria de la persona">
+    </section>
+
+    <!-- seccion de confirmacion -->
+    <section id="confirmacion"> 
+    <h2>Agradecemos confirmar su asistencia</h2>
+
+    <button onclick="window.open('https://wa.me/7751145777?text=¡Hola!%20Confirmo%20mi%20asistencia%20para%20ver%20Spider-Man.','_blank')"> confirmar asistencia </button>
+    
+
+    </section>
+
+<section id="calendario">
+<div id="fecha"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+flatpickr("#fecha", {
+      inline: true,
+    defaultDate: "2026-07-31"
+});
+</script>
+</section>
+
+
+    </main>
+
+    <footer>
+
+    <p> Agradecemos sus muestras de cariño, apoyo y acompañamiento en este momento.</p>
+
+    </footer>
+
+  
+</body>
+
+
+</html>
+
