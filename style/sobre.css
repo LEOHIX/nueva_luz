@@ -7,7 +7,7 @@ body{
 
 main{
  background-image: url('../img/sobre.jpg');
-  background-size:  50% auto; /* cubre arriba y abajo */
+  background-size:  100% auto; /* cubre arriba y abajo */
   background-repeat: no-repeat;
   background-position: center ; /* centrado arriba */
   min-height: 100vh;  

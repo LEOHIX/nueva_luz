@@ -36,6 +36,14 @@
     gap: 15px;                 /* Espacio de 15px entre el botón y el enlace */
 }
 
+
+#ubicacion {
+    display: flex;              /* Activa el modo flexible */
+    flex-direction: column;     /* Los pone en columna (uno debajo del otro) */
+    align-items: center;        /* Los centra horizontalmente */
+    gap: 15px;                 /* Espacio de 15px entre el botón y el enlace */
+}
+
 img {
     width: 100%;             /* Ocupa todo el ancho disponible */
     border-radius: 15px;     /* Esquinas redondeadas */
