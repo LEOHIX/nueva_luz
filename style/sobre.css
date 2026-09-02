@@ -56,7 +56,7 @@ main {
 }
 
 #boton img {
-    width: 301px;
+    width: auto;
     height: auto;
     display: block;
 }
