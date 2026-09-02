@@ -12,7 +12,7 @@ body {
 
 main {
     width: 100%;
-    max-width: 450px; /* Ancho ideal para invitaciones en celular */
+    max-width: auto; /* Ancho ideal para invitaciones en celular */
     background: #fffaf2;       
     padding: 15px;           
     border-radius: 20px;     
