@@ -1,34 +1,53 @@
 
-#buton{
-    display: flex;             
-    align-items: center;        /* Los centra horizontalmente */
-    gap: 15px;     
+body { 
+    background: linear-gradient(135deg, #f5f1e8, #d8c3a5);
+    background-attachment: fixed;
+    min-height: 100vh;  
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Margen flexible para celulares */
 }
 
-
-
-body{ 
-background-image: url('../img/nueva_1.jpeg');
-background-size:  100% auto;
-background-repeat: no-repeat;
-background-position: center ;
-min-height: 100vh;  
-position: relative;
-margin: 100px;
-}
-
-main{
-
-min-height: 100vh; 
-    display: flex;                /* Convertimos el main en contenedor flexible */
-    justify-content: center;      /* Centra horizontalmente */
+main {
+    width: 100%;
+    max-width: 450px; /* Ancho ideal para invitaciones en celular */
+    background: #fffaf2;       
+    padding: 15px;           
+    border-radius: 20px;     
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna si hubiera más */
     align-items: center;
 }
 
+/* Contenedor relativo para la superposición perfecta */
+.contenedor-portada {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+/* La imagen se ajusta al contenedor sin deformarse */
+#portada img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
 
-#boton img  {
-  width: 200px ;   /* ajusta el tamaño del botón */
-  height: auto;
-  display: block;
+/* El botón se mantiene exactamente al centro de la imagen */
+#boton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#boton img {
+    width: 70px; /* Tamaño adaptable para touch en móviles */
+    height: auto;
 }
