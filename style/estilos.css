@@ -4,7 +4,6 @@
     background: linear-gradient(135deg, #f5f1e8, #d8c3a5);
     font-family: 'EB Garamond', serif;
     line-height: 1.6;
-
     display: flex;              /* Activa el modo flexible */
     justify-content: center;    /* Centra horizontalmente */
     align-items: center;        /* Centra verticalmente */
@@ -22,6 +21,7 @@
     box-shadow: 0 10px 30px rgba(0,0,0,0.2); /* Sombrita suave */
     text-align: center; /*centratodo lo que este adentro*/
 }
+
 
 #confirmacion {
     display: flex;              /* Activa el modo flexible */
@@ -93,13 +93,13 @@ button:hover {
 }
 
 
-header h1 {
-    color:  #6b1f35;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-    
-    /* ⬇️ NUEVO: Aplicar la animación ⬇️ */
-    animation: subirYBailar 1.2s ease-out;
+
+
+header, h1, .header-container {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px; /* Evita que el texto pegue con los bordes de la pantalla */
+    word-wrap: break-word; /* Rompe las palabras largas si es necesario para que no desborden */
 }
 
 
@@ -111,13 +111,12 @@ header h1 {
 
 h1, h2, p, div, span {
             font-family: 'EB Garamond', serif;
-            
+            text-align: center;
         }
 
 h1 {
-            font-size: 2.5rem; /* Título principal más grande */
-            font-weight: 600;
-             margin: 0.3rem 0;
+           font-size: clamp(1.5rem, 5vw, 2.5rem); /* Título principal más grande */
+            
         }
 
         h2 {
@@ -127,8 +126,8 @@ h1 {
         }
 
         p {
-             font-size: 2rem; /* Párrafos con buen tamaño de lectura */
-             margin: 0.1rem 0;
+             font-size: 1.1rem;          /* Tamaño legible y elegante para celular */
+            margin: 0.4rem 0;
         }
 
 .descanse-en-paz {
