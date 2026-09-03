@@ -46,7 +46,7 @@
 }
 
 img {
-    width: 100%;             /* Ocupa todo el ancho disponible */
+           
     border-radius: 15px;     /* Esquinas redondeadas */
     margin-top: 15px;        /* Separación arriba */
 }
